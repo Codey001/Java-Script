@@ -22,6 +22,7 @@ let isLoggedIn = false
 
 //object
 console.log(typeof("name"))
+console.log(typeof "raman")
 
 // typeof(null) =>object
 // typeof(undefined) => undefined
