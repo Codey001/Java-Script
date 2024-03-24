@@ -50,3 +50,21 @@ console.log(typeof myObj)
     https://262.ecma-international.org/5.1/#sec-5.1 --11.4.3
 
 */
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++/
+ 
+// Stack (primitive) -> we get a copy
+// Heap (Non-primitive) ->we get referece
+
+let userOne = {
+    name : "Sunny",
+    age : 18
+}
+let userTwo = userOne
+
+userTwo.name = "Ram"
+
+console.log(userOne)
+console.log(userTwo)
