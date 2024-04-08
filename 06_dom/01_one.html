@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <!--attribute-->
     <title>DOM learning</title>
-</head>
-<body>
+    <!--text-->
+    <style>
+      .bg-black {
+        background-color: black;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
     <div class="bg-black">
-        <h1 class="heading">DOM learning</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+      <h1 id="title" class="heading">DOM learning <span>test text</span></h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+      <h2>Lorem ipsum dolor sit.</h2>
+      <h2>Lorem ipsum dolor sit.</h2>
+      <h2>Lorem ipsum dolor sit.</h2>
     </div>
-</body>
+  </body>
 </html>
+
+<!-- console.dir(document) -->
+
+<!-- setAttribute -> oberwrites the prev attribute value -->
+
+<!-- textContext, innerHTML, innerText -> gives inner text -->
+
+<!-- innerText -> gives the current visible text content -->
+<!-- textContent -> gives entire text wherther it is hidden by css -->
+<!-- innerHTML -> gives not only text but also the inner html -->
+
+<!-- QUERT SELECTOR -->
+<!-- document.querySelector('#title') -> id -->
+<!-- '.heading' -> class -->
+
+<!-- CONVERT HTML COLLECTION AND NODE COLLECTION TO ARRAY -->
+
+<!-- const htmlCollection = document.getElementsByTagName('li');
+const arrayFromHtmlCollection = Array.from(htmlCollection);
+// or using spread syntax:
+const arrayFromHtmlCollectionSpread = [...htmlCollection]; -->
+
+<!-- const nodeCollection = document.querySelectorAll('.some-selector');
+const arrayFromNodeCollection = Array.from(nodeCollection);
+// or using spread syntax:
+const arrayFromNodeCollectionSpread = [...nodeCollection]; -->

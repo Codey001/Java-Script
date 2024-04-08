@@ -1,0 +1,15 @@
+body{
+    margin: 0px;  
+    background-color:aqua;
+}
+
+.container{
+    margin: 10%;
+    height: 100vh;
+    font-weight: bold;
+}
+
+#results, #message{
+    margin: 5%;
+    color: red;
+}
